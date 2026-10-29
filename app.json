@@ -1,0 +1,20 @@
+{
+  "name": "AutoApprove Bot",
+  "description": "Telegram auto approve join requests bot with logger group",
+  "stack": "heroku-22",
+  "env": {
+    "API_ID": { "description": "Telegram API ID (my.telegram.org)" },
+    "API_HASH": { "description": "Telegram API HASH" },
+    "BOT_TOKEN": { "description": "Token from @BotFather" },
+    "LOGGER_GROUP_ID": { "description": "Logger group id, e.g. -1001234567890" },
+    "OWNER_ID": { "description": "Your Telegram user id" },
+    "SESSION_STRING": { "description": "Pyrogram session string (only for /approveall)", "required": false },
+    "START_IMG": { "description": "Direct image link for start message (optional)", "required": false },
+    "SUPPORT_URL": { "description": "Support group/channel link, e.g. https://t.me/yourgroup", "required": false },
+    "OWNER_URL": { "description": "Owner profile link, e.g. https://t.me/yourusername", "required": false }
+  },
+  "formation": {
+    "worker": { "quantity": 1, "size": "basic" }
+  },
+  "buildpacks": [{ "url": "heroku/python" }]
+}
