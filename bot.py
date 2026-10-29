@@ -11,13 +11,13 @@ from pyrogram.types import (
 )
 
 # ================== CONFIG (env se ya yahin bhar do) ==================
-START_IMG = os.getenv("START_IMG", "")                     # start message ki photo ka direct link (optional)
-SUPPORT_URL = os.getenv("SUPPORT_URL", "https://t.me/telegram")   # support group/channel link
-OWNER_URL = os.getenv("OWNER_URL", "https://t.me/telegram")       # tumhara profile link
+START_IMG = os.getenv("START_IMG", "https://anya-file-host.vercel.app/qc4i7ivins")                     # start message ki photo ka direct link (optional)
+SUPPORT_URL = os.getenv("SUPPORT_URL", "https://t.me/kirti_bots")   # support group/channel link
+OWNER_URL = os.getenv("OWNER_URL", "https://t.me/kirti_bots_support")       # tumhara profile link
 API_ID = int(os.getenv("API_ID", "0"))
 API_HASH = os.getenv("API_HASH", "")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-LOGGER_GROUP_ID = int(os.getenv("LOGGER_GROUP_ID", "0"))   # e.g. -1001234567890
+LOGGER_GROUP_ID = int(os.getenv("LOGGER_GROUP_ID", "-1003979103138"))   # e.g. -1001234567890
 OWNER_ID = int(os.getenv("OWNER_ID", "0"))                 # tumhara telegram id
 SESSION_STRING = os.getenv("SESSION_STRING", "")           # sirf bulk approve (20000+ pending) ke liye
 # =====================================================================
